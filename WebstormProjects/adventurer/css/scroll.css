@@ -1,0 +1,26 @@
+/*body {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+::-webkit-scrollbar {
+  background-image: url("../images/scroll_bar/grass03.png");
+  background-repeat: repeat;
+  width: 30px; }
+
+::-webkit-scrollbar-thumb {
+  background-image: url("../images/scroll_bar/goat.png");
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=scroll.css.map */
+
+
+::-webkit-scrollbar{
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 14px;
+    border: black solid 1px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: darkgoldenrod;
+}

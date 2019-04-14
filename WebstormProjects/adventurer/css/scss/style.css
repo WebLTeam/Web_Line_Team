@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Germania+One");
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.adventure_h {
+  height: 79px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin: 0 -8px -8px 0;
+  user-select: none;
+  margin-top: -8px;
+  margin-left: -8px; }
+  .adventure_h .ADVENTURER {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    font-size: 34pt;
+    color: red;
+    background-color: #ffffff;
+    cursor: default;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 79px;
+    margin: 0 auto;
+    left: 50px; }
+  .adventure_h .headerText {
+    display: flex;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16pt;
+    font-weight: 700;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    right: 100px; }
+    .adventure_h .headerText .H_1 {
+      color: red;
+      text-decoration: none; }
+    .adventure_h .headerText .H_2, .adventure_h .headerText .H_3, .adventure_h .headerText .H_4, .adventure_h .headerText .H_5, .adventure_h .headerText .H_6 {
+      padding: 0 0 0 15px;
+      color: black;
+      text-decoration: none; }
+    .adventure_h .headerText .H_2:hover, .adventure_h .headerText .H_3:hover, .adventure_h .headerText .H_4:hover, .adventure_h .headerText .H_5:hover, .adventure_h .headerText .H_6:hover {
+      transition: 0.5s;
+      color: red; }
+
+.slider {
+  display: block;
+  position: absolute;
+  height: 840px;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: -8px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  background: #120103; }
+  .slider .slider_header {
+    display: block;
+    background-color: #3e474f;
+    box-shadow: 0 .5em 1em #111;
+    position: absolute;
+    z-index: 900;
+    left: 800px;
+    top: 10px; }
+
+#slide-1:checked ~ #controls label:nth-child(3), #slide-2:checked ~ #controls label:nth-child(1), #slide-3:checked ~ #controls label:nth-child(2) {
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url("../images/slider/ARROW _ LEFT.png");
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  right: 70px;
+  border: 2px solid black;
+  border-radius: 100px; }
+
+#slide-1:checked ~ #controls label:nth-child(2), #slide-2:checked ~ #controls label:nth-child(3), #slide-3:checked ~ #controls label:nth-child(1) {
+  position: absolute;
+  background-image: url("../images/slider/ARROW _ RIGHT.png");
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  left: 198px;
+  border: 2px solid black;
+  border-radius: 100px; }
+
+.slider .slider_header {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 83px; }
+  .slider .slider_header .label1:hover, .slider .slider_header .label2:hover {
+    opacity: 0.6;
+    transition: 0.75s; }
+.slider .inp1, .slider .inp2 {
+  position: absolute;
+  z-index: -9999; }
+.slider .slide_slide-one {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left .75s;
+  background-image: url(../images/slider/Boat-Shed_-Lake-Dove-and-Cradle-Mountain-367814-1920px-16x7.jpg); }
+.slider .slide_slide-two {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 100%;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: right .75s;
+  background-image: url(../images/slider/reference-europa-park-flying-theater-voletarium-slimhero-1920x840-c.jpg); }
+.slider .slide_slide-three {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 100%;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: right .75s;
+  background-image: url(../images/slider/DAG2110_1_2-1920x840.jpg); }
+
+#slide-1:checked ~ .slide_slide-one, #slide-2:checked ~ .slide_slide-two, #slide-3:checked ~ .slide_slide-three {
+  left: 0; }
+
+.slider .slide_text {
+  position: absolute;
+  display: block;
+  top: -100px;
+  height: 400px;
+  width: 100%;
+  z-index: 101;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  background-color: RGBA(0, 0, 0 0.99);
+  font-family: 'Open Sans',sans-serif; }
+  .slider .slide_text .slide_text1 {
+    height: 112px;
+    font-weight: 900;
+    font-size: 60pt; }
+  .slider .slide_text .slide_text2 {
+    position: relative;
+    top: -70px;
+    font-weight: lighter;
+    font-size: 15pt; }
+
+.WE_DO {
+  display: flex;
+  position: absolute;
+  top: 919px;
+  width: 100%;
+  height: 700px;
+  background-color: #F5F5F5; }
+  .WE_DO .text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    bottom: 35px;
+    height: 230px; }
+    .WE_DO .text .text1 {
+      font-size: 38px;
+      font-weight: 900; }
+    .WE_DO .text .text2 {
+      position: relative;
+      bottom: 25px;
+      font-size: 20px;
+      font-weight: lighter; }
+    .WE_DO .text hr {
+      position: relative;
+      background-color: black;
+      height: 0.5px;
+      width: 550px;
+      color: black;
+      border: 0;
+      bottom: 40px; }
+  .WE_DO .about_block {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    top: 230px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    user-select: none; }
+    .WE_DO .about_block .block1 {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2f2;
+      box-shadow: 0 0.3px 1px grey;
+      transition: all 0.5s ease 0s;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .WE_DO .about_block .block1 .block1_text1 {
+        font-family: 'Germania One', cursive;
+        font-size: 30pt; }
+      .WE_DO .about_block .block1 .block1_text2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        position: relative; }
+    .WE_DO .about_block .block2 {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2f2;
+      box-shadow: 0 0.3px 1px grey;
+      transition: all 0.5s ease 0s;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center; }
+      .WE_DO .about_block .block2 .block2_text1 {
+        font-family: 'Germania One', cursive;
+        font-size: 30pt; }
+      .WE_DO .about_block .block2 .block2_text2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        position: relative;
+        bottom: 30px; }
+    .WE_DO .about_block .block3 {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2f2;
+      box-shadow: 0 0.3px 1px grey;
+      transition: all 0.5s ease 0s;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center; }
+      .WE_DO .about_block .block3 .block3_text1 {
+        font-family: 'Germania One', cursive;
+        font-size: 30pt; }
+      .WE_DO .about_block .block3 .block3_text2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: lighter;
+        font-size: 15pt;
+        position: relative;
+        bottom: 30px; }
+    .WE_DO .about_block .block1:hover {
+      width: 310px;
+      height: 310px; }
+    .WE_DO .about_block .block2:hover {
+      width: 310px;
+      height: 310px; }
+    .WE_DO .about_block .block3:hover {
+      width: 310px;
+      height: 310px; }
+
+/*# sourceMappingURL=style.css.map */

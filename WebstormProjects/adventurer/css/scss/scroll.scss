@@ -1,0 +1,17 @@
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar{
+  background-image: url("../images/scroll_bar/grass03.png");
+  background-repeat: repeat;
+  width: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  //background-image: url("../images/scroll_bar/LPC.png");
+  background-image: url("../images/scroll_bar/goat.png");
+  background-repeat: no-repeat;
+}
