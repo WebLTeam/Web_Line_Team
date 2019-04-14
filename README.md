@@ -4,7 +4,9 @@
 ❌Adventurer❌
 
 ⚫for chrome
+
 ⚫for pc + notebook
+
 ⚫simple example
 
 ➖➖➖➖➖➖➖➖
